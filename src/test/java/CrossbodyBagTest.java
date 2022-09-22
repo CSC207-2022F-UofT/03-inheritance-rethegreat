@@ -20,19 +20,19 @@ public class CrossbodyBagTest {
         b = new CrossbodyBag("Blue", 4, 2);
     }
 
-    @Test(timeout = 50)
+    @Test(timeout = 500)
     public void TestGetNumberOfStraps() {
         b.enhance();
         assertEquals(2, b.getNumberOfStraps());
     }
 
-    @Test(timeout = 50)
+    @Test(timeout = 500)
     public void TestEnhance() {
         b.enhance();
         assertEquals(6, b.getCapacity());
     }
 
-    @Test(timeout = 50)
+    @Test(timeout = 500)
     public void TestToString() {
         assertEquals("Blue Crossbody Bag with 2 straps (0 / 4)", b.toString());
     }
